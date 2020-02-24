@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_bottom_popup_container"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/allTagTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_16"
+        android:background="@drawable/bg_red_spot"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:padding="@dimen/dp_8"
+        android:text="@string/all_playlist"
+        android:textColor="@color/white" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cateTagRcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PlayPauseView">
+        <attr name="bg_color" format="color" />
+        <attr name="btn_color" format="color" />
+        <attr name="loadingColor" format="color|reference" />
+        <attr name="gap_width" format="dimension" />
+        <attr name="border_width" format="dimension|reference" />
+        <attr name="hasProgress" format="boolean|reference" />
+        <attr name="space_padding" format="float" />
+        <attr name="anim_duration" format="integer" />
+        <attr name="anim_direction">
+            <enum name="positive" value="1" />
+            <enum name="negative" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="LyricView">
+        <attr name="hint" format="string" />
+        <attr name="hintColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="highlightColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="maxLength" format="dimension" />
+        <attr name="fadeInFadeOut" format="boolean" />
+        <attr name="lineSpace" format="dimension" />
+        <attr name="textAlign">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="MultiViewPager">
+        <!-- Child view inside a page to match the page size against. -->
+        <attr name="matchChildWidth" format="reference" />
+        <!-- Maximum size. -->
+        <attr name="android:maxWidth" />
+        <!-- Maximum size. -->
+        <attr name="android:maxHeight" />
+    </declare-styleable>
+
+    <!--音乐条目属性-->
+    <declare-styleable name="LocalItemView">
+        <attr name="tv_name" format="reference|string" />
+        <attr name="iv_icon" format="reference|integer" />
+        <attr name="tv_desc" format="reference|string" />
+        <attr name="iv_icon_color" format="reference|color" />
+    </declare-styleable>
+    <!--音乐条目属性-->
+    <declare-styleable name="FlipperView">
+        <attr name="fv_radius" format="dimension|reference" />
+        <attr name="fv_color" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="FastScrollRecyclerView">
+        <attr name="fastScrollThumbColor" format="reference|color" />
+        <attr name="fastScrollThumbInactiveColor" format="reference|color" />
+        <attr name="fastScrollTrackColor" format="reference|color" />
+        <attr name="fastScrollPopupBgColor" format="reference|color" />
+        <attr name="fastScrollPopupTextColor" format="reference|color" />
+        <attr name="fastScrollPopupTextSize" format="reference|dimension" />
+        <attr name="fastScrollPopupBackgroundSize" format="reference|dimension" />
+        <attr name="fastScrollPopupPosition" format="enum">
+            <enum name="adjacent" value="0" />
+            <enum name="center" value="1" />
+        </attr>
+        <attr name="fastScrollAutoHide" format="reference|boolean" />
+        <attr name="fastScrollAutoHideDelay" format="reference|integer" />
+        <attr name="fastScrollEnableThumbInactiveColor" format="reference|boolean" />
+        <attr name="fastScrollThumbEnabled" format="reference|boolean" />
+    </declare-styleable>
+
+    <!--频道自定义View-->
+    <declare-styleable name="ChannelView">
+        <attr name="channelHeight" format="dimension" />
+        <attr name="channelColumn" format="integer" />
+        <attr name="channelPadding" format="dimension" />
+        <attr name="channelVerticalSpacing" format="dimension" />
+        <attr name="channelHorizontalSpacing" format="dimension" />
+        <attr name="channelNormalBackground" format="reference" />
+        <attr name="channelEditBackground" format="reference" />
+        <attr name="channelFocusedBackground" format="reference" />
+        <attr name="channelNormalTextColor" format="color" />
+        <attr name="channelFixedCount" format="integer" />
+        <attr name="channelFixedTextColor" format="color" />
+        <attr name="channelFixedBackground" format="reference" />
+        <attr name="channelFocusedTextColor" format="color" />
+        <attr name="channelTextSize" format="dimension" />
+        <attr name="tipEditBackground" format="reference" />
+        <attr name="platesTitleBackground" format="reference" />
+        <attr name="tipEditTextColor" format="color" />
+        <attr name="platesTitleColor" format="color" />
+        <attr name="platesTitleBold" format="boolean" />
+        <attr name="tipEditTextSize" format="dimension" />
+        <attr name="platesTitleSize" format="dimension" />
+        <attr name="platesTitleHeight" format="dimension" />
+        <attr name="platesTitleLeftRightPadding" format="dimension" />
+        <attr name="otherSubTitleBackground" format="reference" />
+        <attr name="otherSubTitleTextColor" format="color" />
+        <attr name="otherSubTitleTextSize" format="dimension" />
+        <attr name="subTitleBackground" format="reference" />
+        <attr name="subTitleTextColor" format="color" />
+        <attr name="subTitleTextSize" format="dimension" />
+        <attr name="subTitleName" format="string" />
+        <attr name="otherSubTitleName" format="string" />
+        <attr name="tipFinishBackground" format="reference" />
+        <attr name="tipFinishTextColor" format="color" />
+        <attr name="tipFinishTextSize" format="dimension" />
+    </declare-styleable>
+</resources>

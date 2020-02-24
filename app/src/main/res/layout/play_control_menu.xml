@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/top_container"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="top"
+        android:background="?cardColor">
+
+    <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="top"
+            android:progress="10"
+            android:tag="tint_accent_color"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottomPlayRcv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:layout_marginEnd="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playPauseView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.guoyi.listeninglove.ui.widget.PlayPauseView
+            android:id="@+id/playPauseView"
+            android:layout_width="@dimen/dp_28"
+            android:layout_height="@dimen/dp_28"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            app:anim_duration="200"
+            app:bg_color="@color/translucent"
+            app:border_width="1dp"
+            app:btn_color="?iconColor"
+            app:gap_width="1.5dp"
+            app:hasProgress="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/playQueueIv"
+            app:layout_constraintTop_toTopOf="parent"
+            app:loadingColor="?iconColor" />
+
+    <ImageButton
+            android:id="@+id/playQueueIv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/play_next"
+            android:padding="@dimen/dp_14"
+            android:src="@drawable/ic_queue_music"
+            android:tint="?iconColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_titles">
+
+        <item>音乐堂</item>
+        <item>乐听乐爱</item>
+
+    </string-array>
+
+    <string-array name="playlist_category">
+        <item>全部</item>
+    </string-array>
+
+    <string-array name="player_titles">
+
+        <item>播放列表</item>
+        <item>图片</item>
+        <item>歌词</item>
+
+    </string-array>
+    <string-array name="song_list">
+
+        <item>喜欢</item>
+        <item>歌曲信息</item>
+
+    </string-array>
+    <string-array name="love_list">
+
+        <item>移除喜欢</item>
+        <item>歌曲信息</item>
+
+    </string-array>
+    <string-array name="song_download">
+
+        <item>添加到下载队列</item>
+        <item>歌曲信息</item>
+    </string-array>
+    <string-array name="info_music_mode">
+
+        <item>顺序播放</item>
+        <item>随机播放</item>
+        <item>单曲循环</item>
+    </string-array>
+
+    <string-array name="info_music_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="info_secret_setting">
+        <item>不保密</item>
+        <item>保密</item>
+    </string-array>
+    <array name="material_colors">
+        <item>#F44336</item>
+        <item>#9C27B0</item>
+        <item>#3F51B5</item>
+        <item>#03A9F4</item>
+        <item>#009688</item>
+        <item>#8BC34A</item>
+        <item>#FFEB3B</item>
+        <item>#FF9800</item>
+        <item>#795548</item>
+        <item>#607D8B</item>
+    </array>
+
+
+    <string-array name="pref_quality_select">
+        <item>标准</item>
+        <item>较高</item>
+        <item>高清</item>
+        <item>无损</item>
+    </string-array>
+    <string-array name="pref_quality_select_values">
+        <item>128</item>
+        <item>192</item>
+        <item>320</item>
+        <item>999</item>
+    </string-array>
+
+    <string-array name="pref_search_filter_select">
+        <item>@string/search_filter_qq</item>
+        <item>@string/search_filter_xiami</item>
+        <item>@string/search_filter_netease</item>
+        <item>@string/search_filter_baidu</item>
+        <item>@string/search_filter_repeat</item>
+        <item>@string/search_filter_cp</item>
+    </string-array>
+    <string-array name="pref_search_filter_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>

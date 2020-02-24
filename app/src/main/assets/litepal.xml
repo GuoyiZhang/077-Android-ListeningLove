@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="musiclake1" />
+    <version value="11" />
+    <list>
+        <mapping class="com.guoyi.listeninglove.bean.Music" />
+        <mapping class="com.guoyi.listeninglove.bean.Playlist" />
+        <mapping class="com.guoyi.listeninglove.bean.MusicToPlaylist" />
+        <mapping class="com.guoyi.listeninglove.bean.Album" />
+        <mapping class="com.guoyi.listeninglove.bean.Artist" />
+        <mapping class="com.guoyi.listeninglove.bean.MessageInfoBean" />
+        <mapping class="com.guoyi.listeninglove.bean.UserInfoBean" />
+        <mapping class="com.guoyi.listeninglove.bean.SearchHistoryBean" />
+        <mapping class="com.guoyi.listeninglove.ui.download.TasksManagerModel" />
+    </list>
+</litepal>

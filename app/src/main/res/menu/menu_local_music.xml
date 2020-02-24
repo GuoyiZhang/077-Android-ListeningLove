@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_order"
+        android:title="@string/title_order"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/action_order_title"
+                android:title="@string/title_order_title"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_order_artist"
+                android:title="@string/title_order_artist"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/action_order_album"
+                android:title="@string/title_order_album"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+</menu>
