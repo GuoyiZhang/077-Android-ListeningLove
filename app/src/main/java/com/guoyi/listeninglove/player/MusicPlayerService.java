@@ -1124,19 +1124,15 @@ public class MusicPlayerService extends Service {
                 .setContentTitle(getTitle())
                 .setContentText(text)
                 .setWhen(mNotificationPostTime)
+                .addAction(R.drawable.ic_skip_previous, "",
+                        retrievePlaybackAction(ACTION_PREV))
                 .addAction(playButtonResId, "",
                         retrievePlaybackAction(ACTION_PLAY_PAUSE))
-                .addAction(R.drawable.ic_skip_previous,
-                        "",
-                        retrievePlaybackAction(ACTION_PREV))
-                .addAction(R.drawable.ic_skip_next,
-                        "",
+                .addAction(R.drawable.ic_skip_next, "",
                         retrievePlaybackAction(ACTION_NEXT))
-                .addAction(R.drawable.ic_lyric,
-                        "",
+                .addAction(R.drawable.ic_lyric, "",
                         retrievePlaybackAction(ACTION_LYRIC))
-                .addAction(R.drawable.ic_clear,
-                        "",
+                .addAction(R.drawable.ic_clear, "",
                         retrievePlaybackAction(ACTION_CLOSE))
                 .setDeleteIntent(MediaButtonReceiver.buildMediaButtonPendingIntent(
                         this, PlaybackStateCompat.ACTION_STOP));
@@ -1221,7 +1217,7 @@ public class MusicPlayerService extends Service {
                 lyricTimer.scheduleAtFixedRate(new TimerTask() {
                     @Override
                     public void run() {
-                        if (isMusicPlaying){
+                        if (isMusicPlaying) {
                             //正在播放时刷新
                             mFloatLyricViewManager.updateLyric(getCurrentPosition(), getDuration());
                         }
@@ -1274,9 +1270,14 @@ public class MusicPlayerService extends Service {
         }
         LogUtil.d("播放状态 = " + isPlaying());
         if (isMusicPlaying)
-            mNotificationBuilder.mActions.get(0).icon = R.drawable.ic_pause;
+            mNotificationBuilder.mActions.get(1).icon = R.drawable.ic_pause;
         else
-            mNotificationBuilder.mActions.get(0).icon = R.drawable.ic_play;
+            mNotificationBuilder.mActions.get(1).icon = R.drawable.ic_play;
+
+        if (showLyric)
+            mNotificationBuilder.mActions.get(3).icon = R.drawable.ic_lyric_enable;
+        else
+            mNotificationBuilder.mActions.get(3).icon = R.drawable.ic_lyric;
 
         mNotification = mNotificationBuilder.build();
         mFloatLyricViewManager.updatePlayStatus(isMusicPlaying);
@@ -1375,6 +1376,8 @@ public class MusicPlayerService extends Service {
             showLyric = !showLyric;
             SPUtils.putAnyCommit(SPUtils.SP_KEY_FLOAT_LYRIC_LOCK, false);
             showDesktopLyric(showLyric);
+
+            updateNotification(true);
         } else {
             SystemUtils.applySystemWindow();
         }

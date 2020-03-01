@@ -49,7 +49,7 @@
 
         <activity
                 android:name="com.guoyi.listeninglove.ui.main.WelcomeActivity"
-                android:screenOrientation="fullSensor"
+                android:screenOrientation="portrait"
                 android:theme="@style/AppTheme.Welcome">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
