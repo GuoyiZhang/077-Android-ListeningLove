@@ -1,11 +1,12 @@
 # MusicLake [![Build Status](https://travis-ci.org/caiyonglong/MusicLake.svg?branch=develop)](https://travis-ci.org/caiyonglong/MusicLake)
 
-
-开源不易，对本项目感兴趣的感谢star~~，本项目也在继续更新中
+## 开源不易，对本项目感兴趣的感谢star~~，本项目也在继续更新中
 
 # 因收到网易云音乐和QQ音乐的官方警告函，我们已关闭app的相关api服务,不再提供任何apk。
+----
 
 # 编译&服务器部署
+---
  [build.md](BUILD.md)
   
 # 功能版本
@@ -40,7 +41,6 @@
 - [三方/NeteaseCloudMusicApi](https://github.com/Binaryify/NeteaseCloudMusicApi)
 
 # 第三方库
-
 - [rxjava](https://github.com/ReactiveX/RxJava)
 - [retrofit](https://github.com/square/retrofit)
 - [dagger2](https://github.com/google/dagger)
@@ -51,7 +51,7 @@
 - [More..](https://github.com/caiyonglong/MusicLake/blob/develop/app/build.gradle)
 
 # 软件运行截图
-<p>
+---
 <img src="screenshots/preview1.png" width="225" height="400"/>
 <img src="screenshots/preview2.png" width="225" height="400"/>
 <img src="screenshots/preview3.png" width="225" height="400"/>
@@ -65,7 +65,7 @@
 <img src="screenshots/preview11.png" width="225" height="400"/>
 <img src="screenshots/preview12.png" width="225" height="400"/>
 <img src="screenshots/preview13.png" width="225" height="400"/>
-</p>
+
 
 - 夜间模式相关截图
 
@@ -80,12 +80,14 @@
 
 
 # 免责声明
+---
 - 乐听乐爱只用作个人学习研究，禁止用于商业及非法用途，如产生法律纠纷与本人无关
 - 音乐api来自于github，非官方版api，本软件不提供任何音频存储服务，如需下载音频，请支持正版！。
 - 音乐版权归各网站所有，本站不承担任何法律责任和连带责任。如果已经涉及到您的版权，请速与本站管理员联系，我们将第一时间为你处理。
 - ListeningLove 并不是一个破解软件，不提供下载付费歌曲！
 
 # 版权声明
+---
 “QQ”、“QQ音乐”及企鹅形象等文字、图形和商业标识，其著作权或商标权归腾讯公司所有。
 QQ音乐享有对其平台授权音乐的版权，请勿随意下载，复制版权内容。具体内容请参考QQ音乐用户协议。
 
