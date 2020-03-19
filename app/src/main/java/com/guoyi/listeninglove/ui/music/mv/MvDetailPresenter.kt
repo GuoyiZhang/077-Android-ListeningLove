@@ -31,6 +31,21 @@ constructor() : BasePresenter<MvDetailContract.View>(), MvDetailContract.Present
         })
     }
 
+    override fun loadKugouMvInfo(songId: String?) {
+        mvModel.loadKugouMv(songId, object : RequestCallBack<MvInfoBean> {
+            override fun success(result: MvInfoBean?) {
+                mView?.hideLoading()
+                mView?.showBaiduMvDetailInfo(result)
+            }
+
+            override fun error(msg: String?) {
+                mView?.hideLoading()
+                mView?.showError(msg, true)
+            }
+
+        })
+    }
+
     private val mvModel = MvModel()
 
     override fun loadMvDetail(mvid: String?) {

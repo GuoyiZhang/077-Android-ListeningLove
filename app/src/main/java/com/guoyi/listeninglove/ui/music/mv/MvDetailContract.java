@@ -31,6 +31,8 @@ public interface MvDetailContract {
 
         void loadBaiduMvInfo(String songId);
 
+        void loadKugouMvInfo(String songId);
+
         void loadSimilarMv(String mvid);
 
         void loadMvComment(String mvid);

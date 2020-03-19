@@ -2,6 +2,7 @@ package com.guoyi.listeninglove.ui.music.mv
 
 import com.guoyi.musicapi.netease.*
 import com.guoyi.listeninglove.api.music.baidu.BaiduApiServiceImpl
+import com.guoyi.listeninglove.api.music.kugou.KuGouApiServiceImpl
 import com.guoyi.listeninglove.api.music.netease.NeteaseApiServiceImpl
 import com.guoyi.listeninglove.bean.MvInfoBean
 import com.guoyi.listeninglove.api.net.ApiManager
@@ -75,6 +76,14 @@ class MvModel {
 
     fun loadBaiduMv(songId: String?, result: RequestCallBack<MvInfoBean>?) {
         val observable = BaiduApiServiceImpl.getMvInfo(songId)
+        ApiManager.request(observable, result)
+    }
+
+    /**
+     * 搜索酷狗mv
+     */
+    fun loadKugouMv(songId: String?, result: RequestCallBack<MvInfoBean>?) {
+        val observable = KuGouApiServiceImpl.getMvInfo(songId)
         ApiManager.request(observable, result)
     }
 }

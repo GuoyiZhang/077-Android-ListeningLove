@@ -1,8 +1,11 @@
 # MusicLake [![Build Status](https://travis-ci.org/caiyonglong/MusicLake.svg?branch=develop)](https://travis-ci.org/caiyonglong/MusicLake)
 
+
+开源不易，对本项目感兴趣的感谢star~~，本项目也在继续更新中
+
 # 因收到网易云音乐和QQ音乐的官方警告函，我们已关闭app的相关api服务,不再提供任何apk。
 
-# 编译&服务器部署 
+# 编译&服务器部署
  [build.md](BUILD.md)
   
 # 功能版本
@@ -16,8 +19,6 @@
 - 精力有限，需求不饱和都会逐步完善
 - [PC端](https://github.com/sunzongzheng/music)
 
-- [交流群:549939157](https://jq.qq.com/?_wv=1027&k=5XrNrCJ) 加群需要问题验证，正确回答：github
-
 ![功能](screenshots/features.png)
 
 
@@ -26,7 +27,7 @@
 
 # *新功能*
 - 项目迁移AndroidX
-- 接入YouTube(目前仅支持搜索，播放)
+- 接入酷狗音乐(目前仅支持搜索，播放)
 
 # 计划
 - [ ] 整理文档
@@ -82,7 +83,7 @@
 - 乐听乐爱只用作个人学习研究，禁止用于商业及非法用途，如产生法律纠纷与本人无关
 - 音乐api来自于github，非官方版api，本软件不提供任何音频存储服务，如需下载音频，请支持正版！。
 - 音乐版权归各网站所有，本站不承担任何法律责任和连带责任。如果已经涉及到您的版权，请速与本站管理员联系，我们将第一时间为你处理。
-- MusicLake 并不是一个破解软件，不提供下载付费歌曲！
+- ListeningLove 并不是一个破解软件，不提供下载付费歌曲！
 
 # 版权声明
 “QQ”、“QQ音乐”及企鹅形象等文字、图形和商业标识，其著作权或商标权归腾讯公司所有。
@@ -94,12 +95,4 @@ QQ音乐享有对其平台授权音乐的版权，请勿随意下载，复制版
 “网易云”、“网易云音乐”等文字、图形和商业标识，其著作权或商标权归网易所有。
 网易云音乐享有对其平台授权音乐的版权，请勿随意下载，复制版权内容。具体内容请参考网易云音乐用户协议。
 
-## :moneybag: 支持&捐赠
-开源不易，请大佬打赏点^V^ :moneybag:
-- 用于服务器日常费用
-- 加点油
-- 微信:
-<img src="screenshots/donate_wechat.png" width="225" height="225"/>
-
-- 支付宝:
-<img src="screenshots/donate_alipay.png" width="225" height="225"/>
+## 对本项目感兴趣的感谢star~~，本项目也在继续更新中

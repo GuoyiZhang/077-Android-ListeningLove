@@ -13,6 +13,7 @@ import com.guoyi.listeninglove.ui.music.charts.activity.BaiduMusicListActivity;
 import com.guoyi.listeninglove.ui.music.charts.activity.BasePlaylistActivity;
 import com.guoyi.listeninglove.ui.music.edit.EditSongListActivity;
 import com.guoyi.listeninglove.ui.music.mv.BaiduMvDetailActivity;
+import com.guoyi.listeninglove.ui.music.mv.KugouMvDetailActivity;
 import com.guoyi.listeninglove.ui.music.mv.MvDetailActivity;
 import com.guoyi.listeninglove.ui.music.playlist.detail.PlaylistDetailActivity;
 import com.guoyi.listeninglove.ui.music.playpage.LockScreenPlayerActivity;
@@ -84,4 +85,6 @@ public interface ActivityComponent {
     void inject(@NotNull LockScreenPlayerActivity lockScreenPlayerActivity);
 
     void inject(@NotNull BindLoginActivity bindLoginActivity);
+
+    void inject(@NotNull KugouMvDetailActivity kugouMvDetailActivity);
 }

@@ -169,7 +169,7 @@ dependencies {
     implementation 'com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.3'
 
     //Android音乐接口Api
-    implementation 'com.github.GuoyiZhang:076-Android-MusicApi:1.0.7'
+    implementation 'com.github.GuoyiZhang:076-Android-MusicApi:1.0.9'
 //    implementation project(':musicapi')
     //缓存
     implementation 'com.danikula:videocache:2.7.1'

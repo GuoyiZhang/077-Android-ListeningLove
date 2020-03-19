@@ -9,6 +9,7 @@ import org.litepal.crud.LitePalSupport
 
 class MvInfoBean() : LitePalSupport() {
     var title: String? = null
+    var singer: String? = null
     var mid: String? = null
     var mvId: String? = null
 

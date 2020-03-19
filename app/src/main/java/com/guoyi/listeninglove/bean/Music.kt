@@ -68,6 +68,8 @@ class Music() : LitePalSupport(), Parcelable {
     var high: Boolean = false //999
     //是否有mv 0代表无，1代表有
     var hasMv: Int = 0
+    //mvHash
+    var mvHash: String? = null
 
     constructor(parcel: Parcel) : this() {
         type = parcel.readString()

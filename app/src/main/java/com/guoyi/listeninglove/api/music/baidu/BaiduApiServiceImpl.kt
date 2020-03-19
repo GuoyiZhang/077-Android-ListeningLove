@@ -405,6 +405,7 @@ object BaiduApiServiceImpl {
                                 ?: (it.result.files.x31?.fileLink
                                 ?: it.result.files.x21?.fileLink)
                         mvInfo.title = it.result.mvInfo.title
+                        mvInfo.type = Constants.BAIDU
                         mvInfo.mid = songId
                         mvInfo.mvId = it.result.mvInfo.mvId
                         mvInfo.desc = it.result.mvInfo.subtitle

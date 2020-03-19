@@ -6,7 +6,9 @@ import com.guoyi.musicapi.kugou.KugouLyric
 import com.guoyi.listeninglove.api.music.MusicUtils
 import com.guoyi.listeninglove.api.music.baidu.BaiduApiServiceImpl
 import com.guoyi.listeninglove.api.net.ApiManager
+import com.guoyi.listeninglove.bean.Artist
 import com.guoyi.listeninglove.bean.Music
+import com.guoyi.listeninglove.bean.MvInfoBean
 import com.guoyi.listeninglove.common.Constants
 import com.guoyi.listeninglove.data.SongLoader
 import com.guoyi.listeninglove.utils.LyricUtil
@@ -73,6 +75,7 @@ object KuGouApiServiceImpl {
                                     musicInfo.album = song.songname
                                     musicInfo.albumId = song.album_id
                                     musicInfo.hasMv = if (song.mvhash == "") 0 else 1
+                                    if (song.mvhash != "") musicInfo.mvHash = song.mvhash
                                     musicInfo.coverUri = ""
                                     musicList.add(musicInfo)
                                 }
@@ -129,5 +132,34 @@ object KuGouApiServiceImpl {
                     })
                 }
     }
+
+    fun getMvInfo(songId: String?): Observable<MvInfoBean> {
+        return baseApiService.getPlayMv(songId)
+                .flatMap {
+                    val mvInfo = MvInfoBean()
+                    if (it.errcode == 0) {
+                        mvInfo.uri = it.mvdata.rq.downurl ?: it.mvdata.sq?.downurl?: it.mvdata.le?.downurl
+                        mvInfo.title = it.songname
+                        mvInfo.singer = it.singer
+                        mvInfo.type = Constants.KUGOU
+                        mvInfo.mid = it.mp3data.hash
+                        mvInfo.mvId = songId
+                        mvInfo.desc =it.songname
+                        mvInfo.picUrl = it.mvicon
+                        val artists = mutableListOf<Artist>()
+                        mvInfo.artist = artists
+                    }
+                    Observable.create(ObservableOnSubscribe<MvInfoBean> { e ->
+                        try {
+                            e.onNext(mvInfo)
+                            e.onComplete()
+                        } catch (error: Exception) {
+                            e.onError(Throwable(error.message))
+                        }
+                    })
+                }
+
+    }
+
 
 }

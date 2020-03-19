@@ -31,6 +31,8 @@ import com.guoyi.listeninglove.utils.LogUtil
 import com.guoyi.listeninglove.utils.ToastUtils
 import com.guoyi.listeninglove.utils.Tools
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.guoyi.listeninglove.ui.music.mv.KugouMvDetailActivity
+import com.guoyi.listeninglove.ui.music.mv.MvDetailActivity
 import org.jetbrains.anko.support.v4.startActivity
 
 /**
@@ -253,6 +255,8 @@ class BottomDialogFragment : BaseBottomSheetDialogFragment() {
                     R.drawable.ic_video_label -> {
                         if (music?.type == Constants.BAIDU || music?.type == Constants.VIDEO) {
                             startActivity<BaiduMvDetailActivity>(Extras.MV_ID to music?.mid)
+                        } else if (music?.type == Constants.KUGOU) {
+                            startActivity<KugouMvDetailActivity>(Extras.MV_ID to music?.mvHash, Extras.SOURCE_FROM to music?.type)
                         } else {
 
                         }

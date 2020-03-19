@@ -298,7 +298,7 @@ class SearchActivity : BaseActivity<SearchPresenter>(), SearchContract.View {
         mAdapter.addFragment(SearchSongsFragment.newInstance(queryString, SearchEngine.Filter.NETEASE), "网易云")
         mAdapter.addFragment(SearchSongsFragment.newInstance(queryString, SearchEngine.Filter.XIAMI), "虾米")
         mAdapter.addFragment(SearchSongsFragment.newInstance(queryString, SearchEngine.Filter.BAIDU), "百度")
-        mAdapter.addFragment(YoutubeSearchFragment.newInstance(queryString), "Youtube")
+//        mAdapter.addFragment(YoutubeSearchFragment.newInstance(queryString), "Youtube")
         viewPager?.adapter = mAdapter
         viewPager?.offscreenPageLimit = 4
         hideLoading()
