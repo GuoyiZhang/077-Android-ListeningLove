@@ -83,31 +83,31 @@ import io.reactivex.schedulers.Schedulers;
 public class MusicPlayerService extends Service {
     private static final String TAG = "MusicPlayerService";
 
-    public static final String ACTION_SERVICE = "com.guoyi.music_lake.service";// 广播标志
+    public static final String ACTION_SERVICE = "com.guoyi.listeninglove.service";// 广播标志
     //    通知栏
-    public static final String ACTION_NEXT = "com.guoyi.music_lake.notify.next";// 下一首广播标志
-    public static final String ACTION_PREV = "com.guoyi.music_lake.notify.prev";// 上一首广播标志
-    public static final String ACTION_PLAY_PAUSE = "com.guoyi.music_lake.notify.play_state";// 播放暂停广播
-    public static final String ACTION_CLOSE = "com.guoyi.music_lake.notify.close";// 播放暂停广播
+    public static final String ACTION_NEXT = "com.guoyi.listeninglove.notify.next";// 下一首广播标志
+    public static final String ACTION_PREV = "com.guoyi.listeninglove.notify.prev";// 上一首广播标志
+    public static final String ACTION_PLAY_PAUSE = "com.guoyi.listeninglove.notify.play_state";// 播放暂停广播
+    public static final String ACTION_CLOSE = "com.guoyi.listeninglove.notify.close";// 播放暂停广播
     public static final String ACTION_IS_WIDGET = "ACTION_IS_WIDGET";// 播放暂停广播
 
-    public static final String ACTION_LYRIC = "com.guoyi.music_lake.notify.lyric";// 播放暂停广播
+    public static final String ACTION_LYRIC = "com.guoyi.listeninglove.notify.lyric";// 播放暂停广播
 
-    public static final String PLAY_STATE_CHANGED = "com.guoyi.music_lake.play_state";// 播放暂停广播
+    public static final String PLAY_STATE_CHANGED = "com.guoyi.listeninglove.play_state";// 播放暂停广播
 
-    public static final String PLAY_STATE_LOADING_CHANGED = "com.guoyi.music_lake.play_state_loading";// 播放loading
+    public static final String PLAY_STATE_LOADING_CHANGED = "com.guoyi.listeninglove.play_state_loading";// 播放loading
 
-    public static final String DURATION_CHANGED = "com.guoyi.music_lake.duration";// 播放时长
+    public static final String DURATION_CHANGED = "com.guoyi.listeninglove.duration";// 播放时长
 
-    public static final String TRACK_ERROR = "com.guoyi.music_lake.error";
-    public static final String SHUTDOWN = "com.guoyi.music_lake.shutdown";
-    public static final String REFRESH = "com.guoyi.music_lake.refresh";
+    public static final String TRACK_ERROR = "com.guoyi.listeninglove.error";
+    public static final String SHUTDOWN = "com.guoyi.listeninglove.shutdown";
+    public static final String REFRESH = "com.guoyi.listeninglove.refresh";
 
-    public static final String PLAY_QUEUE_CLEAR = "com.guoyi.music_lake.play_queue_clear"; //清空播放队列
-    public static final String PLAY_QUEUE_CHANGE = "com.guoyi.music_lake.play_queue_change"; //播放队列改变
+    public static final String PLAY_QUEUE_CLEAR = "com.guoyi.listeninglove.play_queue_clear"; //清空播放队列
+    public static final String PLAY_QUEUE_CHANGE = "com.guoyi.listeninglove.play_queue_change"; //播放队列改变
 
-    public static final String META_CHANGED = "com.guoyi.music_lake.metachanged";//状态改变(歌曲替换)
-    public static final String SCHEDULE_CHANGED = "com.guoyi.music_lake.schedule";//定时广播
+    public static final String META_CHANGED = "com.guoyi.listeninglove.metachanged";//状态改变(歌曲替换)
+    public static final String SCHEDULE_CHANGED = "com.guoyi.listeninglove.schedule";//定时广播
 
     public static final String CMD_TOGGLE_PAUSE = "toggle_pause";//按键播放暂停
     public static final String CMD_NEXT = "next";//按键下一首
@@ -1275,7 +1275,7 @@ public class MusicPlayerService extends Service {
             mNotificationBuilder.mActions.get(1).icon = R.drawable.ic_play;
 
         if (showLyric)
-            mNotificationBuilder.mActions.get(3).icon = R.drawable.ic_lyric_enable;
+            mNotificationBuilder.mActions.get(3).icon = R.drawable.ic_lyric;
         else
             mNotificationBuilder.mActions.get(3).icon = R.drawable.ic_lyric;
 

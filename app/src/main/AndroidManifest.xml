@@ -270,8 +270,8 @@
                 android:label="@string/widget_standard">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-                <action android:name="com.guoyi.music_lake.metachanged" />
-                <action android:name="com.guoyi.music_lake.notify.play_state" />
+                <action android:name="com.guoyi.listeninglove.metachanged" />
+                <action android:name="com.guoyi.listeninglove.notify.play_state" />
             </intent-filter>
 
             <meta-data

@@ -48,7 +48,7 @@ abstract class BaseWidget : AppWidgetProvider() {
     override fun onReceive(context: Context, intent: Intent) {
         val action = intent.action
         LogUtil.e("BaseWidget", "接收到广播-------------" + action!!)
-        if (action.startsWith("com.guoyi.music_lake.")) {
+        if (action.startsWith("com.guoyi.listeninglove.")) {
             val appWidgetManager = AppWidgetManager.getInstance(context)
             val thisAppWidget = ComponentName(context.packageName, this.javaClass.name)
             val appWidgetIds = appWidgetManager.getAppWidgetIds(thisAppWidget)

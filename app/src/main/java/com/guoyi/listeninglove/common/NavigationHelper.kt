@@ -220,7 +220,7 @@ object NavigationHelper {
 
 
     fun getUpdateWidgetIntent(context: Context): Intent {
-        return Intent("com.guoyi.music_lake.appwidget_update")
+        return Intent("com.guoyi.listeninglove.appwidget_update")
     }
 
     fun getLyricIntent(context: Context): Intent {
